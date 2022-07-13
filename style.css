@@ -18,3 +18,13 @@
 #trybewarts-header-title {
   align-self: flex-start;
 }
+
+main {
+  display: flex;
+}
+
+#evaluation-form {
+  display: flex;
+  flex-direction: column;
+  width: 675px;
+}
