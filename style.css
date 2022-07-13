@@ -14,3 +14,7 @@
 .trybewarts-header-logo {
   height: 100px;
 }
+
+#trybewarts-header-title {
+  align-self: flex-start;
+}
