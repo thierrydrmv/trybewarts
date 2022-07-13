@@ -21,6 +21,8 @@
 
 main {
   display: flex;
+  padding: 20px;
+  justify-content: space-around;
 }
 
 #evaluation-form {
@@ -45,4 +47,9 @@ main {
 
 #avaliacao {
   display: flex;
+}
+
+#text-container {
+  display: flex;
+  flex-direction: column;
 }
