@@ -50,6 +50,13 @@ main {
 }
 
 #text-container {
+  position: relative;
   display: flex;
   flex-direction: column;
+}
+
+#counter {
+  position: absolute;
+  top: 89%;
+  left: 92%;
 }

@@ -9,8 +9,17 @@ function click(event) {
   }
 }
 
+function countCharecter() {
+  const textarea = document.getElementById('text-area');
+  const count = document.getElementById('counter');
+  const text = textarea.value;
+  count.innerText = (500 - text.length);
+}
+
 function initialize() {
   const enviarForm = document.querySelector('#login');
+  const textarea = document.getElementById('text-area');
   enviarForm.addEventListener('click', click);
+  textarea.addEventListener('keyup', countCharecter);
 }
 initialize();
