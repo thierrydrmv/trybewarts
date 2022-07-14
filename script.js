@@ -15,19 +15,24 @@ function countCharacter() {
   const text = textarea.value;
   count.innerText = (500 - text.length);
 }
-function enviar(event) {
+function enviar() {
   const agree = document.getElementById('agreement');
+  const buttonEnviar = document.getElementById('submit-btn');
   if (agree.checked === false) {
-    event.preventDefault();
+    buttonEnviar.disabled = true;
+  } else if (agree.checked === true) {
+    buttonEnviar.disabled = false;
   }
 }
 
 function initialize() {
   const enviarForm = document.querySelector('#login');
   const textarea = document.getElementById('textarea');
+  const agree = document.getElementById('agreement');
   const buttonEnviar = document.getElementById('submit-btn');
+  buttonEnviar.disabled = true;
   enviarForm.addEventListener('click', click);
   textarea.addEventListener('keyup', countCharacter);
-  buttonEnviar.addEventListener('click', enviar);
+  agree.addEventListener('click', enviar);
 }
 initialize();
