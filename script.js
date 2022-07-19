@@ -34,15 +34,13 @@ function selectContent(lista) {
 }
 
 function recolheDados() {
-  const house = document.getElementById('house').value;
-  const family = document.querySelector('input[name="family"]:checked').value;
   const content = document.querySelectorAll('input[class="subject"]:checked');
   const contentValue = selectContent(content);
   console.log(contentValue);
 }
 
 function initialize() {
-  const enviarForm = document.querySelector('#login');  
+  const enviarForm = document.querySelector('#login');
   const textarea = document.getElementById('textarea');
   const agree = document.getElementById('agreement');
   const buttonEnviar = document.getElementById('submit-btn');
