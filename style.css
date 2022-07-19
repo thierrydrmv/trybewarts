@@ -3,25 +3,31 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 60px;
 }
 
 .trybewarts-login {
   display: flex;
   gap: 20px;
-  padding: 20px;
+  padding: 0 20px;
 }
 
 .trybewarts-header-logo {
-  height: 100px;
+  height: 60px;
 }
 
 #trybewarts-header-title {
-  align-self: flex-start;
+  align-self: center;
 }
 
-main , footer {
+main {
   display: flex;
-  padding: 20px;
+  padding: 10px;
+  justify-content: space-around;
+}
+
+footer {
+  display: flex;
   justify-content: space-around;
 }
 
@@ -35,18 +41,58 @@ main , footer {
   height: 500px;
 }
 
+#nameInfo {
+  display: flex;
+  gap: 15px;
+}
+
+#input-name {
+  flex-basis: 100%;
+}
+
+#input-lastname {
+  flex-basis: 100%;
+}
+
+#addInfo {
+  display: flex;
+  gap: 15px;
+  padding: 10px 0;
+}
+
+#input-email {
+  flex-basis: 100%;
+}
+
+#house {
+  flex-basis: 100%;
+}
+
+section {
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
 #radio {
   display: flex;
   flex-direction: column;
+  gap: 5px;
 }
 
 #checkbox {
   display: flex;
   flex-direction: column;
+  gap: 5px;
 }
 
 #avaliacao {
   display: flex;
+  padding: 10px 0;
+  gap: 10px;
+  align-content: center;
 }
 
 #text-container {

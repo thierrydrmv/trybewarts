@@ -33,16 +33,35 @@ function selectContent(lista) {
   return texto;
 }
 
-function recolheDados() {
+function formInfo() {
+  const name = document.getElementById('input-name').value;
+  const lastName = document.getElementById('input-lastname').value;
+  const email = document.getElementById('input-email').value;
   const house = document.getElementById('house').value;
   const family = document.querySelector('input[name="family"]:checked').value;
   const content = document.querySelectorAll('input[class="subject"]:checked');
+  const rate = document.querySelector('input[name="rate"]:checked').value;
   const contentValue = selectContent(content);
-  console.log(contentValue);
+  const textValue = document.getElementById('textarea').value;
+  const newInfo = `Nome: ${name} ${lastName}<br>Email: ${email}<br>Casa: ${house}
+  <br>Família: ${family}<br>Matérias: ${contentValue}<br>Avaliação: ${rate}
+  <br>Observações: ${textValue}`;
+  return newInfo;
+}
+
+function recolheDados() {
+  const newInfo = formInfo();
+  const form = document.getElementById('evaluation-form');
+  form.style.visibility = 'hidden';
+  const main = document.querySelector('main');
+  const newConteiner = document.createElement('div');
+  newConteiner.setAttribute('id', 'form-data');
+  newConteiner.innerHTML = newInfo;
+  main.appendChild(newConteiner);
 }
 
 function initialize() {
-  const enviarForm = document.querySelector('#login');  
+  const enviarForm = document.querySelector('#login');
   const textarea = document.getElementById('textarea');
   const agree = document.getElementById('agreement');
   const buttonEnviar = document.getElementById('submit-btn');
