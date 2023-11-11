@@ -6,7 +6,7 @@
 
 The project **Trybewarts** is a forms page.
 
-## 🚀 Build With
+## 🚀 Built With
 
 [![Javascript][Javascript]][Javascript-url][![HTML5][HTML5]][HTML5-url][![CSS3][CSS3]][CSS3-url]
 
